@@ -1,0 +1,22 @@
+/*
+* File: app.component.scss
+* Author: Balogh Csenge
+* Copyright: 2021, Balogh Csenge
+* Group: Szoft_II_N
+* Date: 2023-04-07
+* Github: https://github.com/csengekulker/
+* Licenc: GNU GPL
+*/
+
+.container {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    width: '100%';
+    padding: 20;
+    background-color: '#f8f9fa';
+    text-align: center;
+}
