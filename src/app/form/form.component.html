@@ -1,0 +1,62 @@
+<!-- 
+* File: form.component.html
+* Author: Maximilian Barabas
+* Copyright: M B 
+* Group: Szoft_II_N
+* Date: 2023-04-23
+* Github: https://github.com/maximilianbarabas
+* Licenc: GNU GPL 
+-->
+
+<div class="container">
+    <h3 class="py-3">Add a new ship</h3>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+        <div class="w-50">
+            <div class="row mb-2">
+                <input
+                    placeholder="Name"
+                    class="form-control col"
+                    formControlName="name"
+                    type="text"
+                    id="name">
+            </div>
+            <div class="row mb-2">
+                <input
+                    placeholder="Length (m)"
+                    class="form-control col "
+                    formControlName="length"
+                    type="text"
+                    id="length">
+            </div>
+            <div class="row mb-2">
+                <input
+                    placeholder="Price (HUF)"
+                    class="form-control col"
+                    formControlName="price"
+                    type="text"
+                    id="price">
+            </div>
+            <div class="row mb-2">
+                <input
+                    placeholder="Person"
+                    class="form-control col "
+                    formControlName="person"
+                    type="text"
+                    id="person">
+            </div>
+            <div class="row mb-2">
+                <select
+                    class="form-control col-md-6 form-select"
+                    formControlName="trailer">
+                    <option disabled selected value="">Trailer?</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            
+            </div>
+            <div class="row">
+                <button class="btn btn-dark" type="submit">Add ship</button>
+            </div>
+        </div>
+    </form>
+</div>

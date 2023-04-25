@@ -1,0 +1,30 @@
+<!-- 
+* File: ship.component.html
+* Author: Balogh Csenge
+* Copyright: 2021, Balogh Csenge
+* Group: Szoft_II_N
+* Date: 2023-04-07
+* Github: https://github.com/csengekulker/
+* Licenc: GNU GPL 
+-->
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Length (m)</th>
+        <th scope="col">Person</th>
+        <th scope="col">Price (HUF)</th>
+        <th scope="col">Trailer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ship of ships">
+        <td>{{ship.name}}</td>
+        <td>{{ship.length}}</td>
+        <td>{{ship.person}}</td>
+        <td>{{ship.price}}</td>
+        <td>{{ship.trailer}}</td>
+      </tr>
+    </tbody>
+  </table>
